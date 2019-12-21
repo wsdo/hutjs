@@ -10,8 +10,22 @@
 
 </body>
 <script>
-  let emptyObj = {}
-  console.log('utils',hutjs.isEmpty(emptyObj))
+  let type3 = {name:'stark'}
+  let type2 = {name:[{sex:1},{age:18}]}
+  let type1 = [{sex:1},{age:18}]
+ 
+
+  console.log('{}',hutjs.isEmpty({}))
+  console.log('undefined',hutjs.isEmpty(undefined))
+  console.log('null',hutjs.isEmpty(null))
+  console.log("''",hutjs.isEmpty(''))
+  console.log("[]",hutjs.isEmpty([]))
+  console.log("['name','stark']",hutjs.isEmpty(['name','stark']))
+  console.log("{name:'shudong'}",hutjs.isEmpty({name:'shudong'}))
+  console.log("{_:'shudong'}",hutjs.isEmpty({_:'shudong'}))
+  console.log("{name:[{sex:1},{age:18}]}",hutjs.isEmpty({name:[{sex:1},{age:18}]}))
+  console.log("[{sex:1},{age:18}]",hutjs.isEmpty([{sex:1},{age:18}]))
+
 </script>
 
 </html>
