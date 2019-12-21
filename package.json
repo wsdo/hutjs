@@ -1,12 +1,13 @@
 {
   "name": "hutjs",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "hutjs",
   "main": "dist/hutjs.min.js",
   "scripts": {
     "test": "jest --coverage",
     "dev": "webpack-dev-server --progress --config   build/webpack.dev.js",
-    "build": "webpack"
+    "build": "webpack",
+    "prepublish": "npm run build"
   },
   "author": "starkwang",
   "license": "ISC",
